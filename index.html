@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Éclat Pressing | Abidjan – Nettoyage & Livraison</title>
+  <meta name="description" content="Éclat Pressing à Abidjan : nettoyage soigné de vos vêtements avec livraison possible. Commande en ligne, paiement confirmé sur WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a href="#accueil" class="logo">ÉCLAT <span>PRESSING</span></a>
+
+    <nav id="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#commande">Commander</a>
+      <a href="https://wa.me/2250506312189" target="_blank" class="nav-whatsapp">
+        📞 WhatsApp
+      </a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">✦ LE SOIN AU QUOTIDIEN ✦</p>
+        <h1>Vos vêtements méritent un <span>éclat exceptionnel.</span></h1>
+        <p>Un pressing simple, pratique et soigné à Abidjan.<br>Commandez en ligne, récupérez impeccable.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#commande">Passer une commande →</a>
+          <a class="btn btn-outline" href="#services">Nos services</a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <div class="badge-item"><strong>+500</strong><span>clients satisfaits</span></div>
+        <div class="badge-separator"></div>
+        <div class="badge-item"><strong>48h</strong><span>délai moyen</span></div>
+        <div class="badge-separator"></div>
+        <div class="badge-item"><strong>100%</strong><span>soigné avec amour</span></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <p class="eyebrow">NOS SERVICES</p>
+      <h2>Votre confort, notre priorité.</h2>
+      <p class="section-subtitle">Chaque vêtement est traité avec le plus grand soin, selon sa matière et sa couleur.</p>
+
+      <div class="services">
+        <article class="service" data-animate>
+          <div class="service-icon">🧺</div>
+          <h3>Nettoyage soigné</h3>
+          <p>Traitement adapté à chaque tissu — coton, lin, soie, synthétique. Résultat impeccable garanti.</p>
+        </article>
+
+        <article class="service" data-animate>
+          <div class="service-icon">🚗</div>
+          <h3>Livraison possible</h3>
+          <p>Nous récupérons et vous livrons vos vêtements à domicile. Frais confirmés sur WhatsApp.</p>
+        </article>
+
+        <article class="service" data-animate>
+          <div class="service-icon">✅</div>
+          <h3>Service personnalisé</h3>
+          <p>Chaque commande est vérifiée par notre équipe. Votre satisfaction est notre engagement.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMMANDE -->
+    <section class="section order-section" id="commande">
+      <p class="eyebrow">COMMANDE EN LIGNE</p>
+      <h2>Préparez votre commande</h2>
+      <p class="section-subtitle">Choisissez vos vêtements, remplissez vos coordonnées et envoyez directement sur WhatsApp.</p>
+
+      <form id="orderForm" novalidate>
+
+        <!-- Étape 1 : Articles -->
+        <div class="card" data-animate>
+          <h3><span class="step-num">1</span> Vos vêtements</h3>
+          <div id="articles"></div>
+
+          <div class="total">
+            <span>Total estimatif</span>
+            <strong id="total">0 FCFA</strong>
+          </div>
+
+          <p class="note">
+            💡 Prix indicatifs. Les tarifs définitifs sont confirmés par le pressing avant paiement.
+          </p>
+        </div>
+
+        <!-- Étape 2 : Coordonnées -->
+        <div class="card" data-animate>
+          <h3><span class="step-num">2</span> Vos coordonnées</h3>
+
+          <label for="nom">Nom complet *</label>
+          <input id="nom" name="nom" type="text" required placeholder="Votre nom complet" autocomplete="name">
+
+          <label for="telephone">Téléphone / WhatsApp *</label>
+          <input id="telephone" name="telephone" type="tel" required placeholder="Ex : 07 00 00 00 00" autocomplete="tel">
+
+          <label for="adresse">Adresse à Abidjan *</label>
+          <input id="adresse" name="adresse" type="text" required placeholder="Commune, quartier, repère...">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date souhaitée *</label>
+              <input id="date" name="date" type="date" required>
+            </div>
+            <div class="form-group">
+              <label for="heure">Heure souhaitée *</label>
+              <input id="heure" name="heure" type="time" required>
+            </div>
+          </div>
+
+          <label for="notes">Précisions supplémentaires</label>
+          <textarea id="notes" name="notes" placeholder="Instructions particulières, tache à traiter, vêtement fragile..."></textarea>
+        </div>
+
+        <!-- Étape 3 : Récupération -->
+        <div class="card" data-animate>
+          <h3><span class="step-num">3</span> Mode de récupération</h3>
+
+          <div class="choices">
+            <label class="choice" id="label-livraison">
+              <input type="radio" name="retrait" value="Livraison à domicile" required>
+              <div class="choice-content">
+                <strong>🚗 Livraison à domicile</strong>
+                <span>Frais confirmés sur WhatsApp</span>
+              </div>
+            </label>
+
+            <label class="choice" id="label-retrait">
+              <input type="radio" name="retrait" value="Retrait au pressing">
+              <div class="choice-content">
+                <strong>🏪 Retrait au pressing</strong>
+                <span>Gratuit – venez récupérer vos vêtements</span>
+              </div>
+            </label>
+          </div>
+
+          <p class="note">
+            📍 Les frais de livraison sont confirmés par le gérant via WhatsApp avant toute action.
+          </p>
+
+          <button type="submit" class="btn submit-btn" id="submitBtn">
+            <span>Continuer sur WhatsApp →</span>
+          </button>
+          <p id="message" class="form-message" aria-live="polite"></p>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <h3>ÉCLAT <span>PRESSING</span></h3>
+      <p>Le soin de vos vêtements, en toute simplicité.</p>
+      <p class="footer-location">📍 Abidjan, Côte d'Ivoire</p>
+      <a href="https://wa.me/2250506312189" target="_blank" class="footer-whatsapp">
+        Nous contacter sur WhatsApp
+      </a>
+    </div>
+    <p class="footer-copy">© 2025 Éclat Pressing. Tous droits réservés.</p>
+  </footer>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
